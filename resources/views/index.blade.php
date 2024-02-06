@@ -20,7 +20,7 @@
           @csrf
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Employee</label>
-                <select class="form-select form-select-sm" aria-label="Small select example">
+                <select class="form-select form-select-sm" aria-label="Small select example" name="select_emp">
                     <option selected>Name</option>
                     <option value="Manager">Manager</option>
                     <option value="Ruchi">Ruchi</option>
@@ -29,7 +29,7 @@
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Employee Product</label>
-                <select class="form-select form-select-sm" aria-label="Small select example">
+                <select class="form-select form-select-sm" aria-label="Small select example" name="select_docs">
                     <option selected>Product</option>
                     <option value="Adhar Card">Adhar Card</option>
                     <option value="Pan Card">Pan Card</option>
