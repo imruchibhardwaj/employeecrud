@@ -12,14 +12,20 @@ class EmployeeController extends Controller
         // $validator = Validator::
 
         $employees =  new Employee();
-        $employees->employee = $request->select_emp;
-        $employees->employee_product = $request->select_docs;
-        $employees->employee_address = $request->address;
+        $employees->name = $request->name;
+        $employees->email = $request->email;
+        $employees->passward = $request->passward;
+        $employees->address = $request->address;
+        $employees->city = $request->city;
+        $employees->pin_code = $request->pin_code;
+        $employees->state = $request->state;
         $employees->save();
 
         return redirect()->back();
+        
 
         
 
     }
+    
 }

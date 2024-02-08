@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::post('/home',[EmployeeController::class,'insert'])->name('home');
+
+// Route::post('/home',[EmployeeController::class,'insert']);
+Route::post('/home', [EmployeeController::class,'insert'])->name('home');
+
